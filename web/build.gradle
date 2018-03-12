@@ -1,0 +1,13 @@
+group 'com.bdqn'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+apply from: 'gretty.plugin'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":controller")
+}
